@@ -385,7 +385,7 @@ rule-providers:
 
   nikke:
     <<: *class
-    url: "https://raw.githubusercontent.com/Penitence1992/OpenClash_Overwrite/main/Rules/nikke.list"
+    url: "https://raw.githubusercontent.com/Penitence1992/OpenClash_Overwrite/refs/heads/main/Rules/nikke.list"
 
   private:
     <<: *domain
