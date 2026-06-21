@@ -1,6 +1,17 @@
-- DOMAIN-KEYWORD,xsolla
-- DOMAIN-KEYWORD,nikke
-- DOMAIN-KEYWORD,nikke-gwt
-- DOMAIN-KEYWORD,playone
-- DOMAIN-KEYWORD,intlgame
-- DOMAIN-KEYWORD,levelinfinite
+DOMAIN,nikke-kr.com
+DOMAIN,intlgame.com
+DOMAIN,iegcom.com
+DOMAIN,anticheatexpert.com
+DOMAIN,gamepass.com
+DOMAIN,centauriglobal.com
+DOMAIN-SUFFIX,nikke-kr.com
+DOMAIN-SUFFIX,intlgame.com
+DOMAIN-SUFFIX,iegcom.com
+DOMAIN-SUFFIX,anticheatexpert.com
+DOMAIN-SUFFIX,gamepass.com
+DOMAIN-SUFFIX,centauriglobal.com
+DOMAIN-KEYWORD,nikke
+DOMAIN-KEYWORD,anticheatexpert
+DOMAIN-KEYWORD,playerinfinite
+DOMAIN-KEYWORD,intlgame
+IP-CIDR,43.152.114.31/32,no-resolve
