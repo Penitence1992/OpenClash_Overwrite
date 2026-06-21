@@ -159,6 +159,31 @@ anchor:
     format: text
 
 # =========================================
+#              DNS 设置
+# =========================================
+dns:
+  enable: true
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+  - '*.lan'
+  - '*.local'
+  - localhost.ptlogin2.qq.com
+  nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 1.1.1.1
+  - 8.8.8.8
+  fallback:
+  - https://1.1.1.1/dns-query
+  - https://8.8.8.8/dns-query
+  - https://dns.google/dns-query
+  fallback-filter:
+    geoip: false
+    ipcidr:
+    - 240.0.0.0/4
+# =========================================
 #              代理提供商
 # =========================================
 proxy-providers:
