@@ -268,6 +268,12 @@ proxy-groups:
     <<: *SelectHK
     icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Game.png"
 
+  - name: Nikke国际服
+    <<: *BaseURL-test
+    url: https://nikke-en.com/
+    hidden: false
+    icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Game.png"
+
   - name: Steam
     <<: *SelectHK
     icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Steam.png"
@@ -351,6 +357,7 @@ rules:
   - RULE-SET,category-emby,Emby
   - RULE-SET,spotify,Spotify
   - RULE-SET,bahamut,Bahamut
+  - RULE-SET,nikke,Nikke国际服
   - RULE-SET,category-games,游戏平台
   - RULE-SET,category-entertainment,国外媒体
   - RULE-SET,gfw,手动选择
@@ -375,6 +382,10 @@ rule-providers:
   giveup_proxy:
     <<: *class
     url: "https://raw.githubusercontent.com/Giveupmoon/Clash_Rules_Yaml/refs/heads/main/Rules/Giveup_Proxy.list"
+
+  nikke:
+    <<: *class
+    url: "https://raw.githubusercontent.com/Penitence1992/OpenClash_Overwrite/main/rule/nikke.list"
 
   private:
     <<: *domain
