@@ -349,6 +349,7 @@ rules:
   - RULE-SET,private,全球直连
   - RULE-SET,private_ip,全球直连,no-resolve
   - RULE-SET,giveup_direct,全球直连
+  - RULE-SET,mihoyo,全球直连
   - RULE-SET,giveup_proxy,手动选择
   - RULE-SET,Custom_Direct_Domain,全球直连
   - RULE-SET,Custom_Direct_IP,全球直连,no-resolve
@@ -407,6 +408,10 @@ rule-providers:
   giveup_proxy:
     <<: *class
     url: "https://raw.githubusercontent.com/Giveupmoon/Clash_Rules_Yaml/refs/heads/main/Rules/Giveup_Proxy.list"
+
+  mihoyo:
+    <<: *class
+    url: "https://raw.githubusercontent.com/Penitence1992/OpenClash_Overwrite/main/rule/mihoyo.list"
 
   nikke:
     <<: *class
