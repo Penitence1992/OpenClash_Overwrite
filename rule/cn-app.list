@@ -1,4 +1,29 @@
 # 国内应用 规则集 - 直连
 # classical 行为：每行一条匹配规则，目标组在 RULE-SET 引用时指定
-# DOMAIN-SUFFIX 会匹配该域名及其所有子域名（如 sg-base.changzhi.top）
+# DOMAIN-SUFFIX 会匹配该域名及其所有子域名
+
+# 自定义服务
 DOMAIN-SUFFIX,changzhi.top
+
+# 世纪华通 / Campfire Games (com.gof.china)
+DOMAIN-SUFFIX,campfiregames.cn
+DOMAIN-SUFFIX,dailygn.com
+DOMAIN-SUFFIX,centurygame.com
+
+# 字节系 (火山引擎/巨量/抖音)
+DOMAIN-SUFFIX,vemarsdev.com
+DOMAIN-SUFFIX,volces.com
+DOMAIN-SUFFIX,oceanengine.com
+DOMAIN-SUFFIX,zijieapi.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,ctobsnssdk.com
+
+# 汇量科技广告
+DOMAIN-SUFFIX,hsftcn.cn
+
+# 百度
+DOMAIN-SUFFIX,bdurl.net
+
+# 腾讯 (CrashSight / TPNS)
+DOMAIN-SUFFIX,crashsight.qq.com
+DOMAIN-SUFFIX,tpns.sh.tencent.com
