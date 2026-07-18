@@ -1,2 +1,6 @@
 *.ps1
 *.pcap
+nul
+_*.json
+_*.ps1
+_result.txt
