@@ -1,0 +1,22 @@
+# Steam CDN 直连规则集
+# 这些域名是 Steam 在国内的 CDN 节点，走直连可大幅提升下载速度并节省代理流量
+# classical 行为：每行一条匹配规则，目标组在 RULE-SET 引用时指定
+# 参考: https://steamcommunity.com/discussions/forum/1/... Steam CDN 节点列表
+
+# Steam 通用 CDN
+DOMAIN-SUFFIX,steamcontent.com
+DOMAIN-SUFFIX,steampipe.steamcontent.com
+DOMAIN-SUFFIX,steamstatic.com
+DOMAIN-SUFFIX,steam-chat.com
+DOMAIN-SUFFIX,steamserver.net
+
+# Steam 中国区 CDN（完美世界代理）
+DOMAIN-SUFFIX,steamchina.com
+DOMAIN-SUFFIX,steamchina.net
+DOMAIN-SUFFIX,steamserver.wmsj.cn
+
+# Steam 下载/内容分发
+DOMAIN-SUFFIX,csgo.wmsj.cn
+DOMAIN-SUFFIX,dota2.wmsj.cn
+DOMAIN-KEYWORD,steamcdn
+DOMAIN-KEYWORD,steamdownload

@@ -1,4 +1,13 @@
 # =========================================
+#                全局配置
+# =========================================
+# 统一延迟基准：所有测速URL减去握手RTT，让不同URL测出的延迟可比
+# 避免 g.cn / cp.cloudflare.com / nikke-en.com 三种URL测出的延迟不可比
+unified-delay: true
+# TCP并发连接(Happy Eyeballs)，对多IP域名自动选择最快IP
+tcp-concurrent: true
+
+# =========================================
 #                锚点配置
 # =========================================
 anchor:
@@ -359,7 +368,6 @@ rules:
   - RULE-SET,google-cn,全球直连
   - RULE-SET,category-games@cn,全球直连
   - RULE-SET,Steam_CDN_Domain,全球直连
-  - RULE-SET,Steam_CDN_IP,全球直连,no-resolve
   - RULE-SET,category-game-platforms-download,全球直连
   - RULE-SET,category-public-tracker,全球直连
   - RULE-SET,category-communication,即时通讯
@@ -455,12 +463,8 @@ rule-providers:
     url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games@cn.mrs"
 
   Steam_CDN_Domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/rule/Steam_CDN_Domain.mrs"
-
-  Steam_CDN_IP:
-    <<: *ip
-    url: "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/rule/Steam_CDN_IP.mrs"
+    <<: *class
+    url: "https://raw.githubusercontent.com/Penitence1992/OpenClash_Overwrite/main/rule/steam-cdn.list"
 
   category-game-platforms-download:
     <<: *domain
