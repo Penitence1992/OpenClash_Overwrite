@@ -394,6 +394,7 @@ rules:
   - RULE-SET,netflix-ip,Netflix,no-resolve
   - RULE-SET,cn,全球直连
   - RULE-SET,cn-ip,全球直连,no-resolve
+  - IP-CIDR,101.42.0.0/16,全球直连,no-resolve
   - MATCH,漏网之鱼
 
 # =========================================
