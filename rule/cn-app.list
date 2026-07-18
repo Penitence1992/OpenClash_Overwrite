@@ -1,0 +1,4 @@
+# 国内应用 规则集 - 直连
+# classical 行为：每行一条匹配规则，目标组在 RULE-SET 引用时指定
+# DOMAIN-SUFFIX 会匹配该域名及其所有子域名（如 sg-base.changzhi.top）
+DOMAIN-SUFFIX,changzhi.top
