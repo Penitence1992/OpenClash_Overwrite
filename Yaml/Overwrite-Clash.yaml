@@ -290,10 +290,6 @@ proxy-groups:
     <<: *SelectHK
     icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Microsoft.png"
 
-  - name: 游戏平台
-    <<: *SelectHK
-    icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Game.png"
-
   - name: Nikke国际服
     <<: *BaseURL-test
     url: https://nikke-en.com/
@@ -385,7 +381,6 @@ rules:
   - RULE-SET,spotify,Spotify
   - RULE-SET,bahamut,Bahamut
   - RULE-SET,nikke,Nikke国际服
-  - RULE-SET,category-games,游戏平台
   - RULE-SET,category-entertainment,国外媒体
   - RULE-SET,gfw,手动选择
   - RULE-SET,telegram,即时通讯,no-resolve
