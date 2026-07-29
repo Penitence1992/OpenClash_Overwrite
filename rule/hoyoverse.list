@@ -1,0 +1,4 @@
+# 米哈游国际服 (HoYoverse) 规则集 - 走代理
+# hoyoverse 是米哈游海外品牌，服务器在海外(德国法兰克福AWS等)，需走代理
+# classical 行为：每行一条匹配规则，目标组在 RULE-SET 引用时指定
+DOMAIN-SUFFIX,hoyoverse.com

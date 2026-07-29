@@ -296,6 +296,10 @@ proxy-groups:
     hidden: false
     icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Game.png"
 
+  - name: 米哈游国际服
+    <<: *SelectUS
+    icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Game.png"
+
   - name: Steam
     <<: *SelectHK
     icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Steam.png"
@@ -347,6 +351,7 @@ rules:
   - RULE-SET,private_ip,全球直连,no-resolve
   - RULE-SET,giveup_direct,全球直连
   - RULE-SET,mihoyo,全球直连
+  - RULE-SET,hoyoverse,米哈游国际服
   - RULE-SET,cn-app,全球直连
   - RULE-SET,giveup_proxy,手动选择
   - RULE-SET,Custom_Direct_Domain,全球直连
@@ -547,9 +552,9 @@ rule-providers:
     <<: *domain
     url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bahamut.mrs"
 
-  category-games:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games.mrs"
+  hoyoverse:
+    <<: *class
+    url: "https://raw.githubusercontent.com/Penitence1992/OpenClash_Overwrite/main/rule/hoyoverse.list"
 
   category-entertainment:
     <<: *domain
