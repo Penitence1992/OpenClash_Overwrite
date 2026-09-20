@@ -164,6 +164,7 @@ anchor:
 dns:
   enable: true
   ipv6: true
+  respect-rules: false
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -171,19 +172,24 @@ dns:
   - '*.local'
   - localhost.ptlogin2.qq.com
   - "+.campfiregames.cn"
+  # 仅用于解析 DNS 服务器自身的域名。
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  # 国内及未命中境外分类的域名使用国内 UDP DNS。
   nameserver:
   - 223.5.5.5
   - 119.29.29.29
-  - 1.1.1.1
-  - 8.8.8.8
-  fallback:
-  - https://1.1.1.1/dns-query
-  - https://8.8.8.8/dns-query
-  - https://dns.google/dns-query
-  fallback-filter:
-    geoip: false
-    ipcidr:
-    - 240.0.0.0/4
+  # 代理节点域名单独解析，避免依赖尚未建立的代理连接。
+  proxy-server-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  # 境外分类域名通过指定代理组查询 DoH。
+  nameserver-policy:
+    'geosite:geolocation-!cn':
+    - 'https://1.1.1.1/dns-query#手动选择'
+    - 'https://8.8.8.8/dns-query#手动选择'
+  # 不启用 fallback，避免无 AAAA 记录时等待后备 DNS 超时。
 # =========================================
 #              代理提供商
 # =========================================
