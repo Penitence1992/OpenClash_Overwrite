@@ -71,6 +71,16 @@
 https://raw.githubusercontent.com/Penitence1992/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite.conf
 ```
 
+#### 🔹 主路由用户 - Url-test（仅关闭 OpenClash IPv6）
+
+基于 `Overwrite.conf`，仅关闭 IPv6 代理、IPv6 DNS、IPv6 UDP 代理和 IPv6 绕过规则；DNS 重定向、WAN DNS、Fake-IP 过滤及其他配置保持不变。
+
+```bash
+https://raw.githubusercontent.com/Penitence1992/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-noipv6-minimal.conf
+```
+
+此模块不修改路由器 LAN 的 RA/DHCPv6 设置；如需整个局域网仅使用 IPv4，需另行调整 LAN IPv6 配置。替换原覆写模块订阅即可，保留原 `EN_KEY`，不要同时启用两个主路由覆写模块。
+
 #### 🔹 主路由用户 - Smart-LGBM
 
 ```bash
