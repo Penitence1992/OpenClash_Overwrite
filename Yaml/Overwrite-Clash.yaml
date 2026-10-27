@@ -42,7 +42,7 @@ anchor:
     ^(?=.*(?i)(美|🇺🇸|US|USA|SJC|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD)).*$
   # 台湾
   FilterTW: &FilterTW >-
-    ^(?=.*(?i)(台|🇼🇸|🇹🇼|TW|tai|TPE|TSA|KHH)).*$
+    (?i)(台湾|台灣|臺灣|🇹🇼|Taiwan|(^|[^A-Za-z])(TW|TPE|TSA|KHH)([^A-Za-z]|$))
 
 # 策略组代理列表模板 - 预定义的代理节点优先级排序
   SelectAU: &SelectAU
@@ -226,6 +226,8 @@ proxy-groups:
 
   - name: ChatGPT
     <<: *SelectUS
+    use:
+      - Sub-store
     icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/ChatGPT.png"
 
   - name: Gemini
