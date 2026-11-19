@@ -308,6 +308,19 @@ proxy-groups:
     <<: *SelectUS
     icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Game.png"
 
+  - name: zqwn-woniu
+    type: select
+    proxies:
+      - 全球直连
+      - 手动选择
+      - 自动选择
+      - 香港节点
+      - 美国节点
+      - 新加坡节点
+      - 日本节点
+      - 台湾节点
+    icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Game.png"
+
   - name: Steam
     <<: *SelectHK
     icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Steam.png"
@@ -361,7 +374,7 @@ rules:
   - RULE-SET,mihoyo,全球直连
   - RULE-SET,hoyoverse,米哈游国际服
   - RULE-SET,cn-app,全球直连
-  - RULE-SET,zqwn-woniu,全球直连
+  - RULE-SET,zqwn-woniu,zqwn-woniu
   - RULE-SET,giveup_proxy,手动选择
   - RULE-SET,Custom_Direct_Domain,全球直连
   - RULE-SET,Custom_Direct_IP,全球直连,no-resolve
