@@ -319,6 +319,8 @@ proxy-groups:
       - 新加坡节点
       - 日本节点
       - 台湾节点
+    use:
+      - Sub-store
     icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Game.png"
 
   - name: Steam
