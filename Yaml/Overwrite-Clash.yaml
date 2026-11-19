@@ -361,6 +361,7 @@ rules:
   - RULE-SET,mihoyo,全球直连
   - RULE-SET,hoyoverse,米哈游国际服
   - RULE-SET,cn-app,全球直连
+  - RULE-SET,zqwn-woniu,全球直连
   - RULE-SET,giveup_proxy,手动选择
   - RULE-SET,Custom_Direct_Domain,全球直连
   - RULE-SET,Custom_Direct_IP,全球直连,no-resolve
@@ -427,6 +428,10 @@ rule-providers:
   cn-app:
     <<: *class
     url: "https://raw.githubusercontent.com/Penitence1992/OpenClash_Overwrite/main/rule/cn-app.list"
+
+  zqwn-woniu:
+    <<: *class
+    url: "https://raw.githubusercontent.com/Penitence1992/OpenClash_Overwrite/main/rule/zqwn-woniu.list"
 
   nikke:
     <<: *class

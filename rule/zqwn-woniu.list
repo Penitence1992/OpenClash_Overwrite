@@ -1,0 +1,4 @@
+# zqwn / woniu 域名关键字规则集 - 直连
+# classical 行为：每行一条匹配规则，目标组在 RULE-SET 引用时指定
+DOMAIN-KEYWORD,zqwn
+DOMAIN-KEYWORD,woniu
